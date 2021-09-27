@@ -10,6 +10,6 @@ for _ in range(k):
     c = int(input())
     bagList.append(c)
 
-print(jewelList)
-print(bagList)
-
+answer=0
+jewelList.sort()
+bagList.sort()

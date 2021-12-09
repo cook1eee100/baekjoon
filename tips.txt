@@ -1,0 +1,29 @@
+
+
+
+
+
+
+🟢 dfs & bfs
+
+dfs 런타임 에러 - sys.setrecursionlimit(99999) 추가함으로 써 재귀 횟수 제한 걸어서 안나는듯?
+
+처음 리스트에서 상태값 체크 (ex 7576번 1 위치를 queue에 넣기 )
+
+
+
+
+
+🟢 그 외
+
+2중 포문 빠져나오기
+for ~~~
+    for ~~~
+        if ~~~
+            break
+
+    else:
+        continue
+    break
+for문이 완료되야 else가 실행됨 for문 도중 break 걸리면 else가 실행이 안됨. 여기서 for문이 완료되어 else의 continue 때문에 밑에있는 break가 실행이 안됨
+for문 도중에 break로 인해 멈추면 else가 실행이 안되고 continue가 안되서 그 밑에 있는 break가 실행되서 2중 포문을 빠져나옴

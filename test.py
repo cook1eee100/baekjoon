@@ -3,12 +3,28 @@ from collections import deque
 input = sys.stdin.readline
 
 
-def dfs(a):
+def dfs(depth, a, test):
+    if depth==3:
+        test.append(depth)
+        return
+
     for i in range(len(a)):
         a[i]+=1
 
-    dfs(a)
+    dfs(depth+1, a, test)
 
 a=[1,2,3,4]
+test=[]
+dfs(0, a, test)
+print(a)
+print(test)
 
-dfs(a)
+
+
+
+def test(b):
+    b=3
+
+q=2
+test(q)
+print(q)

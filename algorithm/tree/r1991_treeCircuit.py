@@ -1,3 +1,4 @@
+# 트리로 안풀고 걍 재귀로 품
 import sys
 input = sys.stdin.readline
 
@@ -22,24 +23,24 @@ class Tree:
         self.right=rightNode
 
     def preorderTraversal(self):pass
-
+        
 
 n = int(input())
 
-nodeList=[]
+nodeDict={}
 for i in range(n):
-    temp = input().strip().split()
-    # print(temp)
-    nodeList.append(Node(temp[0]))
+    node, left, right=input().strip().split()
+    nodeDict[node]=[left, right]
 
-for i in nodeList:
-    print(i)
+
 
 
 
 
 
 """     # 트리 구현 없이 단순히 dfs 재귀로 푼 코드
+        # 리스트로 하나하나 검색하지 말고 데이터를 넣을때 딕셔너리로 넣어서 값 체크 없이 바로 value로 다음 노드 넘어가기
+
 
 import sys
 input = sys.stdin.readline
